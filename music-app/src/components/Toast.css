@@ -1,0 +1,50 @@
+.toast {
+    position: fixed;
+    background-color: rgb(123, 46, 187);
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+    border: 0;
+    border-radius: 5px;
+
+    width: 300px;
+
+    left: calc(50vw - 150px);
+    bottom: 100px;
+
+    z-index: 20;
+
+}
+
+.toast-text {
+    text-align: center;
+    font-family: "SC Dream 6";
+    font-size: 18px;
+    color: rgba(204, 204, 204, 1.0);
+}
+
+@keyframes fade-in-animation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fade-out-animation {
+  0% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+.fade-in > div {
+    animation: fade-in-animation .5s ease-in-out;
+}
+  
+.fade-out > div {
+    animation: fade-out-animation .5s ease-in-out;
+}

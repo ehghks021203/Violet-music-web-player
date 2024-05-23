@@ -1,0 +1,389 @@
+.player {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    background-color: rgba(37, 45, 54, 1.0);
+    width: 100%;
+    min-width: 920px;
+    height: 60px;
+    z-index: 10;
+}
+
+.player-music-bar {
+    position: fixed;
+    bottom: 60px;
+    background-color: rgb(57, 63, 70);
+    width: 100%;
+    height: 6px;
+    z-index: 10;
+}
+
+.progress-container {
+    position: fixed;
+    bottom: 60px;
+    background-color: transparent;
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+}
+
+.progress {
+    position: fixed;
+    bottom: 60px;
+    background-color: rgb(123, 46, 187);
+    height: 6px;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.player-first-area{
+    padding-left: 5%;
+    display: flex;
+    justify-content: left;
+    width: 45%;
+    min-width: 250px;
+}
+
+.player-second-area {
+    display: flex;
+    justify-content: center;
+    width: 272px;
+}
+
+.player-third-area {
+    background-color: transparent;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    min-width: 250px;
+}
+
+/* player-first-area */
+.player-playlist-open-button {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: left;
+    margin-right: -10px;
+    width: 80%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.player-song-img {
+    background-color: #ececec;
+    margin-top: 4px;
+    width: 52px;
+    height: 52px;
+}
+
+.player-song-info {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    margin-top: 6px;
+    margin-left: 10px;
+    width: auto;
+    height: 50px;
+}
+
+.player-song-title {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    text-align: left;
+    font-family: "SC Dream 6";
+    font-size: 18px;
+    color: rgba(204, 204, 204, 1.0);
+    float: left;
+}
+
+.player-artist-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 12px;
+    color: rgba(204, 204, 204, 1.0);
+    float: left;
+}
+
+
+/* player-second-area */
+.player-btn-area {
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.player-btn {
+    border: 0;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.player-small-btn {
+    border: 0;
+    background-color: transparent;
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+/* player-third-area */
+.player-time-text {
+    margin-left: 10px;
+    margin-top: 21px;
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 12px;
+    color: rgba(204, 204, 204, 1.0);
+}
+
+.player-volume {
+    margin-top: 19px;
+    margin-right: 10px;
+}
+
+.player-volume-bar{
+    width: 90%;
+    background: linear-gradient(to right, rgb(123, 46, 187) 0%, rgb(123, 46, 187) 50%, #ececec 50%, #ececec 100%);
+    border-radius: 8px;
+    outline: none;
+    transition: background 450ms ease-in;
+    accent-color: rgb(123, 46, 187);
+}
+
+
+/* playlist */
+@keyframes playlist-fade-in-dropup-animation {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+  
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes playlist-fade-out-dropup-animation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+
+/* playlist animation */
+.player-playlist-fade-in {
+    overflow: hidden;
+}
+
+.player-playlist-fade-in > div {
+    animation: playlist-fade-in-dropup-animation .2s ease-out;
+}
+
+.player-playlist-fade-out {
+    overflow: hidden;
+}
+
+.player-playlist-fade-out > div {
+    animation: playlist-fade-out-dropup-animation .2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+/* playlist */
+.player-playlist {
+    background-color: rgba(37, 45, 54, 1.0);
+    border-radius: 5px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 70px;
+    left: 5%;
+    width: 350px;
+    height: 450px;
+    z-index: 5;
+}
+
+.player-playlist-empty-text {
+    margin-top: 180px;
+    text-align: center;
+    font-family: "SC Dream 4";
+    font-size: 24px;
+    color: rgba(204, 204, 204, 1.0);
+}
+
+.player-playlist-list {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.player-playlist-top-bar {
+    border: 1px;
+    border-style: none none solid none;
+    border-color: rgba(250, 250, 250, 0.8);
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-playlist-text {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    width: 200px;
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 18px;
+    color: rgba(204, 204, 204, 1.0);
+}
+
+.player-playlist-delete-button {
+    background-color: transparent;
+    border: 0;
+    width: 52px;
+    height: 32px;
+    margin-top: 8px;
+    margin-right: 8px;
+    font-family: "SC Dream 4";
+    font-size: 14px;
+    color: rgba(230, 230, 230, 1.0);
+    cursor: pointer;
+}
+
+.player-playlist-unit-button{
+    border: 1px;
+    border-style: none none solid none;
+    border-color: rgba(250, 250, 250, 0.5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    background-color: transparent;
+    display: flex;
+    justify-content: left;
+    width: 85%;
+    cursor: pointer;
+}
+
+.player-song-delete-button {
+    border: 1px;
+    border-style: none none solid none;
+    border-color: rgba(250, 250, 250, 0.5);
+    background-color: transparent;
+    width: 15%;
+
+    cursor: pointer;
+}
+
+/* timer */
+.player-timer-dropdown {
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.player-timer-dropdown-button {
+    position : relative;
+    display : block;
+    border: 0;
+    border-radius : 4px;
+    list-style: none;
+
+    background-color: rgb(57, 63, 70);
+    font-weight: 400;
+    
+    padding : 8px;
+    width :36px;
+    text-align: left;
+    cursor : pointer;
+    font-size : 12px;
+    z-index :1;
+
+    font-family: "SC Dream 4";
+    font-size: 10px;
+    color : #b9b9b9;
+}
+
+.player-timer-dropdown-content {
+    margin-top: 10px;
+}
+
+
+/* Lyric animation */
+.player-lyric-fade-in {
+    overflow: hidden;
+}
+
+.player-lyric-fade-in > div {
+    animation: playlist-fade-in-dropup-animation .2s ease-out;
+}
+
+.player-lyric-fade-out {
+    overflow: hidden;
+}
+
+.player-lyric-fade-out > div {
+    animation: playlist-fade-out-dropup-animation .2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+/* lyric */
+.player-lyric {
+    background-color: rgba(37, 45, 54, 0.8);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    bottom: 66px;
+
+    width: 100vw;
+    height: 80px;
+
+    overflow-y: auto;
+    z-index: 5;
+}
+
+.player-lyric-text {
+
+    margin-top: 28px;
+    margin-bottom: 28px;
+    text-align: center;
+    font-family: "SC Dream 4";
+    font-size: 15px;
+    color: rgba(204, 204, 204, 1.0);
+}
+

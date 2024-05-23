@@ -1,0 +1,155 @@
+
+.album-info-area {
+    position: relative;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    height: 256px;
+}
+
+.album-info-img {
+    border: 0;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 60px;
+    width: 256px;
+    height: 256px;
+}
+
+.album-info-text {
+    
+    margin-left: 50px;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+}
+
+.album-info-title-text {
+    text-align: left;
+    font-family: "SC Dream 6";
+    font-size: 36px;
+    color: #ececec;
+}
+
+.album-info-artist-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 18px;
+    color: #b9b9b9;
+}
+
+.album-info-genre-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 18px;
+    color: #b9b9b9;
+}
+
+.album-info-regdate-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 18px;
+    color: #b9b9b9;
+}
+
+.album-info-title {
+    margin-left: 5%;
+    text-align: left;
+    font-family: "SC Dream 6";
+    font-size: 24px;
+    color: #cecece;
+}
+
+.album-info-summary {
+    display: block;
+
+    font-style: italic;
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 15px;
+    color: #b9b9b9;
+}
+
+
+/* Playlist */
+.playlist-info-title-text {
+    text-align: left;
+    font-family: "SC Dream 6";
+    font-size: 36px;
+    color: #ececec;
+}
+.playlist-info-info-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 18px;
+    color: #b9b9b9;
+}
+.playlist-info-user-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 18px;
+    color: #b9b9b9;
+}
+.playlist-info-count-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 18px;
+    color: #b9b9b9;
+}
+.playlist-info-regdate-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 18px;
+    color: #b9b9b9;
+}
+
+.musicpage-none-result-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 22px;
+    color: #b9b9b9;
+}
+
+.musicpage-add-to-playlist-button {
+    border: 0;
+    border-radius: 30px;
+    background-color: #ececec;
+
+    margin-top: 20px;
+
+    width: 120px;
+    height: 30px;
+
+    text-align: center;
+    font-family: "SC Dream 4";
+    font-size: 8px;
+    color: rgba(19, 19, 19, 1.0);
+
+    cursor: pointer;
+}
+
+.musicpage-delete-playlist-button {
+    border: 0;
+    border-radius: 30px;
+    background-color: #ececec;
+
+    margin-top: 20px;
+
+    width: 100px;
+    height: 30px;
+
+    text-align: center;
+    font-family: "SC Dream 4";
+    font-size: 8px;
+    color: rgba(19, 19, 19, 1.0);
+
+    cursor: pointer;
+}

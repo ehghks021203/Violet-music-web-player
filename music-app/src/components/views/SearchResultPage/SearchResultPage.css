@@ -1,0 +1,208 @@
+.search-title-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 22px;
+    color: #cecece;
+}
+
+
+.search-none-result-text {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-weight: lighter;
+    font-size: 22px;
+    color: #b9b9b9;
+}
+
+/* Music List */
+.search-music-list {
+    margin-left: 5%;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.search-result-title {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 22px;
+    color: #cecece;
+}
+
+.search-list-div-line {
+    background-color: white;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -2px;
+    width: 100%;
+    height: 2px;
+}
+
+.search-music-list-table {
+    width: 100%;
+    table-layout: fixed;
+    color: #b9b9b9;
+    margin-bottom: 100px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border-bottom: 2px solid #b9b9b9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    text-align: left;
+    font-weight: normal;
+    font-size: 8px;
+}
+
+.music-list-number-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #b9b9b9;
+}
+
+.search-music-list-album-album-img {
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+.search-music-list-album-img {
+    border: 0;
+    background-color: white;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+}
+
+.search-music-list-song-text {
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    font-family: "SC Dream 6";
+    font-size: 18px;
+    text-overflow: ellipsis;
+    color: #ececec;
+    cursor: pointer;
+}
+.search-music-list-album-song-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 18px;
+    color: #b9b9b9;
+    cursor: pointer;
+}
+.search-music-list-album-artist-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 12px;
+    color: #b9b9b9;
+}
+
+.search-music-list-album-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 12px;
+    color: #b9b9b9;
+}
+
+.search-music-list-btn {
+    border: 0;
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    margin-left: calc(50% - 21px);
+    cursor: pointer;
+}
+
+.search-music-list-text-btn {
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    font-family: "SC Dream 4";
+    font-size: 12px;
+    color: #b9b9b9;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* album list */
+.search-album-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    column-gap: 20px;
+}
+
+.search-album-unit {
+    min-width: 200px;
+    max-width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.search-album-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.search-album-text {
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    font-family: "SC Dream 6";
+    font-size: 20px;
+    text-overflow: ellipsis;
+    color: #ececec;
+}
+
+.search-album-artist-text {
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #b9b9b9;
+}
+
+
+/* artist list */
+.search-artist-img {
+    border: 0;
+    background-color: white;
+    width: 54px;
+    height: 54px;
+}
+
+.search-artist-text {
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    font-family: "SC Dream 6";
+    font-size: 18px;
+    text-overflow: ellipsis;
+    color: #ececec;
+}
+
+.search-artist-sub-text {
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 12px;
+    color: #b9b9b9;
+}

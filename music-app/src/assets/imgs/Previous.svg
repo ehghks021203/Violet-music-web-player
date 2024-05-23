@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="24" viewBox="0 0 17.5 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <path id="Previous" class="cls-1" d="M0,24V0H3V24ZM3.5,12,17.5.5v23Z"/>
+</svg>

@@ -1,0 +1,35 @@
+.top-page-main-window {
+    background: #0E0E10;
+    position: relative;
+    flex: 1;
+    padding-bottom: 100px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.top-page-title {
+    margin-left: 20%;
+    text-align: left;
+    font-family: "SC Dream 6";
+    font-size: 36px;
+    color: #cecece;
+}
+
+.top-page-subtitle {
+    margin-left: 20%;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: "SC Dream 6";
+    font-size: 32px;
+    color: #cecece;
+}
+
+.top-page-context {
+    display: block;
+    margin-left: 20%;
+    width: 60%;
+    text-align: left;
+    font-family: "SC Dream 4";
+    font-size: 20px;
+    color: #cecece;
+}
